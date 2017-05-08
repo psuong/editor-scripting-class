@@ -209,6 +209,15 @@ MonoBehaviour:
   uComment: 
   slider: 120
   comment: 
+  enemyInfo:
+  - name: This
+    state: 0
+  - name: is
+    state: 1
+  - name: pretty
+    state: 2
+  - name: annoying
+    state: 3
 --- !u!4 &752078820
 Transform:
   m_ObjectHideFlags: 0
