@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public enum State { Ally, Enemy, Neutral, Prop }
 
 [System.Serializable]
@@ -12,7 +11,6 @@ public struct EnemyInfo {
     public string name;
     public State state;
 }
-
 
 public class SampleClass : MonoBehaviour {
 

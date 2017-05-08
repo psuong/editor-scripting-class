@@ -21,6 +21,17 @@ public class SampleClassEditor : Editor {
     }
 
     public override void OnInspectorGUI() {
-        base.OnInspectorGUI();
+        DrawDefaultInspector(); // Draw the default inspector
+        serializedObject.Update();  // Update the target object's state
+
+        EditorGUI.BeginChangeCheck(); // Start checking whether or not the Editor has been changed
+
+        // Our list will go here.
+        
+        // If the inspector's values change...
+        if (EditorGUI.EndChangeCheck()) {
+            // Apply the changes with undo support!
+            serializedObject.ApplyModifiedProperties(); 
+        }
     }
 }
