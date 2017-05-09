@@ -46,6 +46,8 @@ public class SampleClassEditor : Editor {
     }
 
     private void OnDrawElement(Rect rect, int index, bool isActive, bool isFocused) {
+        // To manipulate the element height modify the elementHeight in the reordableList
+        enemyInfoList.elementHeight = EditorGUIUtility.singleLineHeight * 3;
         SerializedProperty element = enemyInfoProperty.GetArrayElementAtIndex(index); // Grab the serialized element via the index
 
         // Use the FindPropertyRelative to get relative properties, or properties within classes and structs
