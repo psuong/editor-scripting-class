@@ -216,7 +216,7 @@ MonoBehaviour:
     state: 1
   - name: pretty
     state: 2
-  - name: annoying
+  - name: good!
     state: 3
 --- !u!4 &752078820
 Transform:
